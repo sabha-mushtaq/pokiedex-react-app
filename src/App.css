@@ -1,0 +1,36 @@
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('/pokemone-b.webp'); /* Background image path */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Title Animation */
+h1 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    animation: titleAnimation 3s ease infinite;
+}
+
+/* Title Animation Keyframes */
+@keyframes titleAnimation {
+    0% { transform: scale(1); color: #ffcc00; }
+    50% { transform: scale(1.1); color: #ff6a88; }
+    100% { transform: scale(1); color: #ffcc00; }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+}
+

@@ -1,0 +1,141 @@
+/* Global styles */
+body {
+    font-family: 'Press Start 2P', cursive; /* Retro Pokémon feel */
+    background: radial-gradient(circle at center, #87ceeb 0%, #4682b4 50%, #2a3d66 100%);
+    background-attachment: fixed;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Animated clouds for the sky */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: url('pokemone-b.webp') repeat-x;
+    animation: moveClouds 60s linear infinite;
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Wrapper for the Pokedex */
+.pokedex-wrapper {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    z-index: 1;
+    position: relative;
+}
+
+#pokedex-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 0px #2a75bb, 6px 6px 0px #ffcb05;
+}
+
+/* Pokemon cards grid */
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Individual Pokémon card */
+.pokemon-card {
+    background: linear-gradient(145deg, #ffcb05, #ffde5c);
+    border: 3px solid #3b4cca;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.pokemon-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #3b4cca;
+    text-shadow: 2px 2px 0px #ffcb05, 4px 4px 0px #2a75bb;
+}
+
+.pokemon-card img {
+    width: 100px;
+    height: 100px;
+    animation: float 2s infinite ease-in-out;
+}
+
+/* Pagination controls */
+.pagination-controls {
+    margin-top: 20px;
+}
+
+.pagination-button {
+    background: radial-gradient(circle at center, #ff0000, #cc0000 70%);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pagination-button:hover {
+    background: radial-gradient(circle at center, #00cc00, #009900 70%);
+    transform: translateY(-2px);
+}
+
+.pagination-button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes moveClouds {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

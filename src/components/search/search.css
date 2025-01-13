@@ -1,0 +1,86 @@
+/* Container for search bar and logo */
+.search-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem auto;
+    width: 100%;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 1rem; /* Space between elements */
+}
+
+/* Pokémon-themed logo */
+.pokemon-logo {
+    font-family: 'Pokemon', sans-serif; /* Pokémon-style font */
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffcc00; /* Pokémon yellow */
+    text-shadow: 
+        -2px -2px 0px #3b4cca, /* Blue shadow */
+        2px -2px 0px #ff3e3e,  /* Red shadow */
+        -2px 2px 0px #ff3e3e,  /* Red shadow */
+        2px 2px 0px #3b4cca;   /* Blue shadow */
+    text-align: center;
+}
+
+/* Search bar input */
+.search-input {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    border: 2px solid #ffcc00; /* Pokémon yellow */
+    border-radius: 30px;
+    width: 60%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.3); /* Transparent white for depth */
+    color: #1e293b; /* Darker text for contrast */
+    box-shadow: 0px 4px 15px rgba(255, 206, 91, 0.5); /* Subtle Pokémon glow */
+    transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: #ffcc00; /* Pokémon yellow for placeholder */
+    font-size: 1.1rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.search-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.6); /* Brighter white for focus */
+    box-shadow: 0px 5px 25px rgba(255, 206, 91, 0.7); /* Enhanced glow effect */
+    border-color: #ff3e3e; /* Pokémon red for focus */
+}
+
+.search-input:hover {
+    background: rgba(255, 255, 255, 0.4); /* Slight hover effect */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .search-wrapper {
+        flex-direction: column; /* Stack logo and input vertically */
+        align-items: center;
+        gap: 0.5rem; /* Reduce spacing on smaller screens */
+    }
+
+    .pokemon-logo {
+        font-size: 1.8rem; /* Smaller font for mobile */
+    }
+
+    .search-input {
+        width: 90%; /* Full width on smaller screens */
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .pokemon-logo {
+        font-size: 1.5rem; /* Further reduced for very small screens */
+    }
+
+    .search-input {
+        width: 95%; /* Full width on very small screens */
+    }
+}
+
+
