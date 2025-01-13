@@ -34,21 +34,21 @@ To run the project locally:
 2. Navigate into the project directory:
 
 ```bash
-cd pokieapp
+     cd pokieapp
 
 3. Install the dependencies:
 ```bash
-npm install
+     npm install
 
 4. Run the development server:
 ```bash
-npm run dev
+       npm run dev
 
 5. Open the app in your browser at http://localhost:3000.
- http://localhost:5173/
+         http://localhost:5173/
 
 ## Contributing
 Feel free to fork the repository, make changes, and create a pull request. Contributions are welcome!
 
-##License
+## License
 This project is licensed under the MIT License.
