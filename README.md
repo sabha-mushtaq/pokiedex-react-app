@@ -29,5 +29,11 @@ To run the project locally:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/pokieapp.git
+   git clone https://github.com/sabha-mushtaq/pokiedex-react-app
+
+Navigate into the project directory:
+
+bash
+Copy code
+cd pokieapp
 
