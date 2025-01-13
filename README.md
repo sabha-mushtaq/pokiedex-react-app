@@ -33,7 +33,8 @@ git clone https://github.com/sabha-mushtaq/pokiedex-react-app
      cd pokieapp
 
 3. Install the dependencies:
-4.    npm install
+
+   npm install
 
 5. Run the development server:
 
