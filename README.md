@@ -30,18 +30,18 @@ To run the project locally:
 git clone https://github.com/sabha-mushtaq/pokiedex-react-app
 
 2. Navigate into the project directory:
-3. 
+   
      cd pokieapp
 
-4. Install the dependencies:
+3. Install the dependencies:
 
    npm install
 
-5. Run the development server:
+4. Run the development server:
 
        npm run dev
 
-6. Open the app in your browser at :
+5. Open the app in your browser at :
          http://localhost:5173/
 
 ## Contributing
