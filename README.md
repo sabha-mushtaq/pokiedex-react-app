@@ -27,24 +27,19 @@ PokieApp is a React-based application that fetches Pokémon details from the Pok
 To run the project locally:
 
 1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/sabha-mushtaq/pokiedex-react-app
+git clone https://github.com/sabha-mushtaq/pokiedex-react-app
 
 2. Navigate into the project directory:
-
-```bash
      cd pokieapp
 
 3. Install the dependencies:
-```bash
-     npm install
+4.    npm install
 
-4. Run the development server:
-```bash
+5. Run the development server:
+
        npm run dev
 
-5. Open the app in your browser at http://localhost:3000.
+6. Open the app in your browser at http://localhost:3000.
          http://localhost:5173/
 
 ## Contributing
