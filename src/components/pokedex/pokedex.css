@@ -17,7 +17,7 @@ body::before {
     left: 0;
     width: 200%;
     height: 200%;
-    background: url('pokemone-b.webp') repeat-x;
+    background: url("https://res.cloudinary.com/dyuuc32as/image/upload/v1757700010/pokemone-b_bgzx9f.webp") repeat-x;
     animation: moveClouds 60s linear infinite;
     opacity: 0.5;
     pointer-events: none;
